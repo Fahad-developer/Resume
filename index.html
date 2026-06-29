@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💖 surprise call · I love you 💖</title>
+  <title>💜 Muneeba · I love you 💜</title>
   <style>
+    /* ===== DARK DECENT THEME ===== */
     * {
       margin: 0;
       padding: 0;
@@ -13,7 +14,7 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(circle at 10% 20%, #fce4ec, #f8c8d8);
+      background: radial-gradient(ellipse at 30% 20%, #1a0e1a, #0d0510);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,7 +24,7 @@
       overflow-x: hidden;
     }
 
-    /* floating hearts background (surprise animation) */
+    /* floating hearts — dark theme par soft glow */
     .floating-hearts {
       position: fixed;
       top: 0;
@@ -38,62 +39,63 @@
     .floating-hearts span {
       position: absolute;
       display: block;
-      font-size: 2.4rem;
-      animation: floatUp 8s infinite linear;
-      opacity: 0.3;
-      color: #e6718f;
+      font-size: 2rem;
+      animation: floatUp 10s infinite linear;
+      opacity: 0.15;
+      color: #c77d9e;
+      text-shadow: 0 0 12px #c77d9e44;
     }
 
     @keyframes floatUp {
-      0% { transform: translateY(100vh) rotate(0deg) scale(0.6); opacity: 0; }
-      10% { opacity: 0.5; }
-      90% { opacity: 0.5; }
-      100% { transform: translateY(-10vh) rotate(360deg) scale(1.2); opacity: 0; }
+      0% { transform: translateY(100vh) rotate(0deg) scale(0.4); opacity: 0; }
+      10% { opacity: 0.25; }
+      90% { opacity: 0.25; }
+      100% { transform: translateY(-10vh) rotate(360deg) scale(0.9); opacity: 0; }
     }
 
-    /* main card – dreamy */
+    /* main card — dark glassmorphism */
     .surprise-card {
       max-width: 750px;
       width: 100%;
-      background: rgba(255, 245, 248, 0.7);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-radius: 4rem 2rem 4rem 2rem;
-      box-shadow: 0 30px 50px -16px rgba(160, 50, 80, 0.35),
-                  0 0 0 1px rgba(255, 210, 220, 0.5) inset;
+      background: rgba(26, 14, 26, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 3rem 1.5rem 3rem 1.5rem;
+      box-shadow: 0 30px 60px -12px rgba(180, 50, 120, 0.25),
+                  0 0 0 1px rgba(180, 80, 140, 0.15) inset;
       padding: 2.2rem 2rem 2.8rem;
       text-align: center;
-      border: 1px solid rgba(255, 190, 205, 0.3);
+      border: 1px solid rgba(200, 100, 160, 0.1);
       animation: floatGlow 5s infinite alternate ease-in-out;
       position: relative;
       z-index: 10;
     }
 
     @keyframes floatGlow {
-      0% { transform: translateY(0px) scale(1); box-shadow: 0 20px 40px -10px rgba(200, 70, 110, 0.25); }
-      100% { transform: translateY(-10px) scale(1.01); box-shadow: 0 40px 60px -12px rgba(190, 50, 90, 0.45); }
+      0% { transform: translateY(0px) scale(1); box-shadow: 0 20px 40px -12px rgba(180, 50, 120, 0.2); }
+      100% { transform: translateY(-8px) scale(1.005); box-shadow: 0 40px 70px -16px rgba(200, 60, 140, 0.35); }
     }
 
-    /* GIF‑style surprise emojis */
+    /* GIF emojis */
     .gif-surprise {
       display: flex;
       justify-content: center;
       gap: 0.2rem 0.8rem;
       flex-wrap: wrap;
       margin-bottom: 0.2rem;
-      animation: gifPulse 2.4s infinite alternate;
+      animation: gifPulse 2.6s infinite alternate;
     }
 
     @keyframes gifPulse {
-      0% { transform: scale(0.97); opacity: 0.85; filter: drop-shadow(0 0 4px #ffb0c0); }
-      100% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 16px #ff7f9f); }
+      0% { transform: scale(0.97); opacity: 0.8; filter: drop-shadow(0 0 6px #c77d9e66); }
+      100% { transform: scale(1.04); opacity: 1; filter: drop-shadow(0 0 20px #d48aaa88); }
     }
 
     .emoji-big {
-      font-size: 4rem;
+      font-size: 3.8rem;
       line-height: 1.2;
       display: inline-block;
-      animation: wiggle 1.8s infinite alternate ease-in-out;
+      animation: wiggle 2s infinite alternate ease-in-out;
     }
     .emoji-big:nth-child(2) { animation-delay: 0.3s; }
     .emoji-big:nth-child(3) { animation-delay: 0.6s; }
@@ -101,23 +103,23 @@
     .emoji-big:nth-child(5) { animation-delay: 1.2s; }
 
     @keyframes wiggle {
-      0% { transform: rotate(-8deg) scale(1); }
-      100% { transform: rotate(8deg) scale(1.2); }
+      0% { transform: rotate(-6deg) scale(1); }
+      100% { transform: rotate(6deg) scale(1.15); }
     }
 
-    /* sparkle twinkle */
+    /* sparkle */
     .sparkle-container {
       display: flex;
       justify-content: center;
       gap: 0.7rem;
-      margin: 0.4rem 0 1rem;
-      font-size: 2rem;
-      letter-spacing: 6px;
-      color: #fda4b6;
+      margin: 0.3rem 0 1.2rem;
+      font-size: 1.8rem;
+      letter-spacing: 5px;
+      color: #d48aaa;
     }
     .sparkle-container span {
       display: inline-block;
-      animation: twinkle 2.4s infinite alternate;
+      animation: twinkle 2.6s infinite alternate;
     }
     .sparkle-container span:nth-child(2) { animation-delay: 0.4s; }
     .sparkle-container span:nth-child(3) { animation-delay: 0.8s; }
@@ -125,25 +127,25 @@
     .sparkle-container span:nth-child(5) { animation-delay: 1.6s; }
 
     @keyframes twinkle {
-      0% { opacity: 0.2; transform: scale(0.7) rotate(0deg); }
-      100% { opacity: 1; transform: scale(1.4) rotate(25deg); }
+      0% { opacity: 0.15; transform: scale(0.6) rotate(0deg); }
+      100% { opacity: 0.9; transform: scale(1.3) rotate(20deg); }
     }
 
-    /* --- BEAUTIFUL IMAGE PLACEHOLDER (add your "love" image later) --- */
+    /* ===== IMAGE PLACEHOLDER (love.png) ===== */
     .love-image-wrapper {
       margin: 1rem auto 1.2rem;
-      max-width: 280px;
-      border-radius: 40px 20px 40px 20px;
+      max-width: 260px;
+      border-radius: 40px 18px 40px 18px;
       overflow: hidden;
-      box-shadow: 0 16px 32px -12px rgba(180, 60, 90, 0.4);
-      border: 3px solid rgba(255, 220, 230, 0.6);
+      box-shadow: 0 16px 40px -10px rgba(180, 50, 120, 0.3);
+      border: 2px solid rgba(200, 100, 160, 0.2);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
-      animation: imageFloat 3s infinite alternate ease-in-out;
+      animation: imageFloat 3.5s infinite alternate ease-in-out;
     }
 
     @keyframes imageFloat {
-      0% { transform: translateY(0px) rotate(-1deg); }
-      100% { transform: translateY(-6px) rotate(1deg); }
+      0% { transform: translateY(0px) rotate(-0.5deg); }
+      100% { transform: translateY(-6px) rotate(0.5deg); }
     }
 
     .love-image-wrapper img {
@@ -152,168 +154,186 @@
       height: auto;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      background: #fce4ec; /* fallback */
+      background: #1a0e1a; /* fallback */
       transition: transform 0.6s ease;
     }
 
     .love-image-wrapper:hover img {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
 
-    /* if no image, show a lovely gradient with text */
+    /* fallback if love.png missing */
     .image-placeholder-text {
-      background: linear-gradient(145deg, #fad0d8, #f7b6c8);
+      background: linear-gradient(145deg, #2a1222, #1a0e1a);
       width: 100%;
       aspect-ratio: 1 / 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: #7a2e4a;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #c77d9e;
       flex-direction: column;
       padding: 1rem;
-      border-radius: 38px 18px 38px 18px;
+      border-radius: 38px 16px 38px 16px;
+      border: 1px solid #3a1a2a;
     }
 
     .image-placeholder-text span {
-      font-size: 3.8rem;
+      font-size: 3.4rem;
       display: block;
       margin-bottom: 0.2rem;
     }
 
-    /* question box */
+    /* ===== MAIN QUESTION ===== */
     .question-box {
-      background: rgba(255, 230, 238, 0.5);
+      background: rgba(40, 18, 32, 0.5);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       padding: 1.8rem 1.2rem;
       border-radius: 3rem 1.5rem 3rem 1.5rem;
       margin: 1rem 0 1.6rem;
-      border: 1px solid rgba(255, 160, 180, 0.25);
-      box-shadow: 0 10px 20px -10px rgba(190, 60, 90, 0.2);
+      border: 1px solid rgba(200, 100, 160, 0.15);
+      box-shadow: 0 10px 30px -10px rgba(100, 20, 60, 0.2);
     }
 
     .question-box h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-      color: #7a2e4a;
-      letter-spacing: -0.5px;
+      font-size: 2.6rem;
+      font-weight: 500;
+      color: #e8c0d0;
+      letter-spacing: 0.5px;
       line-height: 1.3;
       margin-bottom: 0.2rem;
-      text-shadow: 2px 2px 0 rgba(255, 200, 210, 0.5);
+      text-shadow: 0 0 20px #c77d9e33;
     }
 
     .question-box .soft-text {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 300;
-      background: linear-gradient(135deg, #b94a6e, #d45f80);
+      background: linear-gradient(135deg, #d48aaa, #b06a82);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       margin: 0.2rem 0;
     }
 
+    .question-box .muneeba-highlight {
+      color: #e8c0d0;
+      font-weight: 500;
+      -webkit-text-fill-color: #e8c0d0;
+      text-shadow: 0 0 20px #c77d9e44;
+    }
+
     .call-emoji {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       display: block;
       margin: 0.4rem 0 0.2rem;
-      animation: ringBell 1.6s infinite alternate;
+      animation: ringBell 1.8s infinite alternate;
     }
 
     @keyframes ringBell {
-      0% { transform: rotate(-18deg); }
-      100% { transform: rotate(18deg); }
+      0% { transform: rotate(-15deg); }
+      100% { transform: rotate(15deg); }
     }
 
-    /* CALL button */
+    .sub-text {
+      font-size: 1rem;
+      color: #a07084;
+      margin-top: 0.3rem;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== CALL BUTTON ===== */
     .call-button {
-      background: linear-gradient(145deg, #ff8aac, #e6628a);
+      background: linear-gradient(145deg, #a04a6a, #7a2e4a);
       border: none;
-      padding: 1.2rem 2.8rem;
+      padding: 1rem 2.6rem;
       border-radius: 60px;
-      font-size: 2.2rem;
-      font-weight: 600;
-      color: #fff9fa;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #f0e0e8;
       cursor: pointer;
-      box-shadow: 0 12px 22px -8px #d45a7e, 0 4px 0 0 #b34366 inset;
-      transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-      letter-spacing: 1px;
+      box-shadow: 0 12px 28px -8px #4a1a2a, 0 2px 0 0 #6a2a3e inset;
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 14px;
+      gap: 12px;
       margin-top: 0.2rem;
-      border: 1px solid #ffb3c7;
-      animation: buttonPulse 2.2s infinite alternate;
+      border: 1px solid rgba(200, 100, 160, 0.2);
+      animation: buttonPulse 2.4s infinite alternate;
       position: relative;
-      overflow: hidden;
     }
 
     .call-button::after {
-      content: '💕';
+      content: '💜';
       position: absolute;
-      font-size: 2.8rem;
-      right: -10px;
-      top: -10px;
+      font-size: 2.2rem;
+      right: -6px;
+      top: -6px;
       opacity: 0.3;
-      animation: sparkleExtra 1.6s infinite alternate;
+      animation: sparkleExtra 1.8s infinite alternate;
     }
 
     @keyframes sparkleExtra {
-      0% { transform: scale(0.5) rotate(0deg); opacity: 0.2; }
-      100% { transform: scale(1.6) rotate(40deg); opacity: 0.7; }
+      0% { transform: scale(0.4) rotate(0deg); opacity: 0.1; }
+      100% { transform: scale(1.4) rotate(30deg); opacity: 0.5; }
     }
 
     .call-button:active {
       transform: scale(0.94);
-      box-shadow: 0 4px 10px -4px #b34366;
+      box-shadow: 0 4px 12px -4px #4a1a2a;
     }
 
     @keyframes buttonPulse {
-      0% { box-shadow: 0 12px 22px -8px #d45a7e, 0 4px 0 0 #b34366 inset; }
-      100% { box-shadow: 0 20px 34px -6px #e06a92, 0 4px 0 0 #b34366 inset; }
+      0% { box-shadow: 0 12px 28px -8px #4a1a2a, 0 2px 0 0 #6a2a3e inset; }
+      100% { box-shadow: 0 20px 38px -6px #6a2a4a, 0 2px 0 0 #6a2a3e inset; }
     }
 
+    /* ===== LOVE NOTE ===== */
     .love-note {
       font-size: 1.1rem;
       margin-top: 1.8rem;
-      color: #86435e;
-      background: rgba(255, 240, 245, 0.6);
+      color: #b08094;
+      background: rgba(40, 18, 32, 0.4);
       padding: 0.6rem 1.4rem;
       border-radius: 40px;
       display: inline-block;
       backdrop-filter: blur(2px);
-      border: 1px solid #ffcad6;
-      font-weight: 400;
+      border: 1px solid rgba(200, 100, 160, 0.1);
+      font-weight: 300;
+      letter-spacing: 0.5px;
     }
 
     .love-note i {
       font-style: normal;
       display: inline-block;
-      animation: heartBeat 1.8s infinite;
+      animation: heartBeat 2s infinite;
     }
 
     @keyframes heartBeat {
       0% { transform: scale(1); }
-      30% { transform: scale(1.3); }
+      30% { transform: scale(1.2); }
       60% { transform: scale(0.9); }
       100% { transform: scale(1); }
     }
 
-    /* hidden answer area */
+    /* ===== HIDDEN ANSWER ===== */
     .answer-area {
       margin-top: 2rem;
       transition: all 0.3s ease;
     }
 
     .hidden-message {
-      background: #ffeef4;
+      background: rgba(40, 18, 32, 0.7);
+      backdrop-filter: blur(6px);
       padding: 1.4rem 1rem;
-      border-radius: 60px;
-      font-size: 1.6rem;
-      color: #632c44;
-      border: 2px dashed #e67a9c;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      color: #e8c0d0;
+      border: 1px solid rgba(200, 100, 160, 0.2);
       opacity: 0;
       transform: scale(0.85);
       transition: opacity 0.6s ease, transform 0.5s ease;
@@ -321,8 +341,7 @@
       display: inline-block;
       width: 100%;
       max-width: 420px;
-      backdrop-filter: blur(4px);
-      box-shadow: 0 4px 16px rgba(200, 70, 100, 0.15);
+      box-shadow: 0 4px 20px rgba(100, 20, 60, 0.2);
     }
 
     .hidden-message.show {
@@ -332,15 +351,16 @@
     }
 
     .big-love {
-      font-size: 3rem;
+      font-size: 2.8rem;
       display: block;
       margin-bottom: 0.2rem;
       animation: heartBeat 2s infinite;
+      color: #d48aaa;
     }
 
     .answer-hint {
-      font-size: 1.2rem;
-      color: #98536e;
+      font-size: 1.1rem;
+      color: #b08094;
       margin-top: 0.4rem;
       font-weight: 300;
     }
@@ -348,55 +368,56 @@
     .click-extra {
       background: transparent;
       border: none;
-      color: #b14d6e;
-      font-size: 1.2rem;
+      color: #c77d9e;
+      font-size: 1.1rem;
       margin-top: 0.3rem;
       cursor: pointer;
-      text-decoration: underline dotted #d97a98;
+      text-decoration: underline dotted #7a4a5a;
       padding: 0.3rem 0.8rem;
       transition: 0.2s;
     }
     .click-extra:hover {
-      color: #7a2e4a;
+      color: #e8c0d0;
       text-decoration: underline solid;
     }
 
     #herAnswer {
       margin-top: 1rem;
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: #a13e5e;
-      min-height: 3.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #d48aaa;
+      min-height: 3.2rem;
       transition: all 0.3s ease;
     }
 
     .footer-note {
-      font-size: 0.9rem;
-      color: #ad6b81;
+      font-size: 0.85rem;
+      color: #6a4a5a;
       margin-top: 2rem;
-      opacity: 0.7;
+      opacity: 0.6;
+      letter-spacing: 0.5px;
     }
 
     @media (max-width: 480px) {
       .surprise-card { padding: 1.5rem 1rem; }
-      .question-box h1 { font-size: 2.2rem; }
-      .question-box .soft-text { font-size: 1.3rem; }
-      .call-button { font-size: 1.6rem; padding: 1rem 1.8rem; }
-      .emoji-big { font-size: 2.8rem; }
-      .love-image-wrapper { max-width: 200px; }
+      .question-box h1 { font-size: 2rem; }
+      .question-box .soft-text { font-size: 1.2rem; }
+      .call-button { font-size: 1.4rem; padding: 0.9rem 1.6rem; }
+      .emoji-big { font-size: 2.6rem; }
+      .love-image-wrapper { max-width: 190px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- floating hearts background (surprise animation) -->
+  <!-- floating hearts -->
   <div class="floating-hearts" id="floatingHearts"></div>
 
   <div class="surprise-card">
 
-    <!-- GIF‑style emojis -->
+    <!-- GIF emojis -->
     <div class="gif-surprise">
-      <span class="emoji-big">💗</span>
+      <span class="emoji-big">💜</span>
       <span class="emoji-big">✨</span>
       <span class="emoji-big">🥰</span>
       <span class="emoji-big">💖</span>
@@ -404,66 +425,65 @@
     </div>
 
     <div class="sparkle-container">
-      <span>✦</span><span>❤️</span><span>✦</span><span>❤️</span><span>✦</span>
+      <span>✦</span><span>💜</span><span>✦</span><span>💜</span><span>✦</span>
     </div>
 
-    <!-- BEAUTIFUL IMAGE PLACEHOLDER (replace src with your "love" image) -->
+    <!-- ===== IMAGE: love.png (same folder) ===== -->
     <div class="love-image-wrapper">
-      <!-- *********************************************** -->
-      <!-- 🔴  REPLACE THE SRC BELOW WITH YOUR IMAGE  🔴 -->
-      <!-- *********************************************** -->
       <img 
-        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23fad0d8'/%3E%3Ctext x='200' y='180' font-family='Segoe UI, sans-serif' font-size='48' text-anchor='middle' fill='%237a2e4a'%3E💖%3C/text%3E%3Ctext x='200' y='250' font-family='Segoe UI, sans-serif' font-size='28' text-anchor='middle' fill='%2398536e'%3Elove%3C/text%3E%3C/svg%3E"
-        alt="love image placeholder – add your own beautiful image"
-        title="add your 'love' image here (replace src)"
+        src="love.png"
+        alt="Muneeba ❤️"
+        title="for you, Muneeba"
       />
     </div>
 
-    <!-- question box -->
+    <!-- question box with Muneeba's name -->
     <div class="question-box">
-      <h1>🌷 my love 🌷</h1>
-      <div class="soft-text">will you let me hear your voice?</div>
-      <span class="call-emoji">📞💕</span>
-      <div style="font-size: 1.1rem; color: #a14b66; margin-top: 0.3rem; font-weight: 300;">
-        i have something important to say …
+      <h1>🌷 Muneeba 🌷</h1>
+      <div class="soft-text">
+        will you let me hear your voice, <span class="muneeba-highlight">Muneeba</span>?
       </div>
+      <span class="call-emoji">📞💜</span>
+      <div class="sub-text">i have something important to say …</div>
     </div>
 
     <!-- CALL button -->
     <button id="callSurpriseBtn" class="call-button">
-      <span>📲</span> CALL ME <span>💌</span>
+      <span>📲</span> CALL ME <span>💜</span>
     </button>
 
-    <!-- hidden answer area -->
+    <!-- hidden answer -->
     <div class="answer-area" id="answerArea">
       <div id="hiddenMessage" class="hidden-message">
-        <span class="big-love">❤️ I LOVE YOU ❤️</span>
-        <span style="display: block; font-size: 1.4rem; margin: 0.3rem 0;">(now i can hear your answer)</span>
+        <span class="big-love">❤️ I LOVE YOU, MUNEEBA ❤️</span>
+        <span style="display: block; font-size: 1.3rem; margin: 0.3rem 0; color: #b08094;">
+          (now i can hear your answer)
+        </span>
         <div class="answer-hint">👂💬 tell me everything …</div>
-        <button id="hearAnswerBtn" class="click-extra">💬 click to “hear” her answer 💬</button>
+        <button id="hearAnswerBtn" class="click-extra">💬 click to “hear” Muneeba's answer 💬</button>
         <div id="herAnswer"></div>
       </div>
     </div>
 
     <div class="love-note">
-      <i>💞</i> surprise … i’ve been waiting to say it <i>💞</i>
+      <i>💜</i> for Muneeba — my whole heart <i>💜</i>
     </div>
-    <div class="footer-note">✨ just for you — my whole heart ✨</div>
+    <div class="footer-note">✨ just for you, Muneeba ✨</div>
   </div>
 
   <script>
     (function() {
-      // generate floating hearts
+      // floating hearts
       const heartsContainer = document.getElementById('floatingHearts');
-      const heartSymbols = ['💖', '💗', '❤️', '🥰', '💕', '✨', '🌸'];
-      for (let i = 0; i < 26; i++) {
+      const heartSymbols = ['💜', '💖', '💗', '🥰', '✨', '🌸'];
+      for (let i = 0; i < 24; i++) {
         const span = document.createElement('span');
         span.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
         span.style.left = Math.random() * 100 + '%';
-        span.style.fontSize = (1.6 + Math.random() * 2.2) + 'rem';
-        span.style.animationDuration = (6 + Math.random() * 8) + 's';
-        span.style.animationDelay = (Math.random() * 12) + 's';
-        span.style.opacity = 0.2 + Math.random() * 0.3;
+        span.style.fontSize = (1.4 + Math.random() * 2.2) + 'rem';
+        span.style.animationDuration = (7 + Math.random() * 9) + 's';
+        span.style.animationDelay = (Math.random() * 14) + 's';
+        span.style.opacity = 0.1 + Math.random() * 0.2;
         heartsContainer.appendChild(span);
       }
 
@@ -472,14 +492,15 @@
       const hearBtn = document.getElementById('hearAnswerBtn');
       const herAnswerDiv = document.getElementById('herAnswer');
 
+      // Muneeba ke liye sweet answers
       const sweetAnswers = [
-        '💕 I love you too! 💕',
-        '🥹 yes … I love you! 🥹',
-        '😭 you made my day … I love you ❤️',
-        '💖 I’ve been waiting to hear that! 💖',
-        '✨ I love you more ✨',
-        '💗 of course … I love you! 💗',
-        '🌹 I love you too, my love 🌹'
+        '💜 I love you too, Muneeba! 💜',
+        '🥹 yes … I love you, Muneeba! 🥹',
+        '😭 you made my day … I love you Muneeba ❤️',
+        '💖 I\'ve been waiting for this, Muneeba! 💖',
+        '✨ I love you more, Muneeba ✨',
+        '💗 of course … I love you, Muneeba! 💗',
+        '🌹 I love you too, my Muneeba 🌹'
       ];
 
       // main call button
@@ -487,63 +508,63 @@
         hiddenMsg.classList.add('show');
         hiddenMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        callBtn.innerHTML = `<span>💗</span> I LOVE YOU <span>💗</span>`;
-        callBtn.style.background = 'linear-gradient(145deg, #f06a92, #c94a72)';
-        callBtn.style.boxShadow = '0 8px 18px -6px #b34366';
+        callBtn.innerHTML = `<span>💜</span> I LOVE YOU, MUNEEBA <span>💜</span>`;
+        callBtn.style.background = 'linear-gradient(145deg, #7a2e4a, #5a1a32)';
+        callBtn.style.boxShadow = '0 8px 20px -6px #4a1a2a';
         setTimeout(() => {
-          callBtn.innerHTML = `<span>📲</span> CALL ME <span>💌</span>`;
-          callBtn.style.background = 'linear-gradient(145deg, #ff8aac, #e6628a)';
-          callBtn.style.boxShadow = '0 12px 22px -8px #d45a7e, 0 4px 0 0 #b34366 inset';
-        }, 4500);
+          callBtn.innerHTML = `<span>📲</span> CALL ME <span>💜</span>`;
+          callBtn.style.background = 'linear-gradient(145deg, #a04a6a, #7a2e4a)';
+          callBtn.style.boxShadow = '0 12px 28px -8px #4a1a2a, 0 2px 0 0 #6a2a3e inset';
+        }, 5000);
 
-        // extra surprise: burst of hearts on click
-        for (let i = 0; i < 6; i++) {
+        // burst of hearts
+        for (let i = 0; i < 8; i++) {
           setTimeout(() => {
             const heartSpan = document.createElement('span');
-            heartSpan.textContent = '💗';
+            heartSpan.textContent = '💜';
             heartSpan.style.position = 'fixed';
-            heartSpan.style.fontSize = (2 + Math.random() * 3) + 'rem';
-            heartSpan.style.left = (20 + Math.random() * 60) + '%';
-            heartSpan.style.top = (20 + Math.random() * 50) + '%';
+            heartSpan.style.fontSize = (1.8 + Math.random() * 3) + 'rem';
+            heartSpan.style.left = (15 + Math.random() * 70) + '%';
+            heartSpan.style.top = (15 + Math.random() * 60) + '%';
             heartSpan.style.pointerEvents = 'none';
             heartSpan.style.zIndex = '999';
-            heartSpan.style.transition = 'all 1.2s ease-out';
+            heartSpan.style.transition = 'all 1.4s ease-out';
             heartSpan.style.opacity = '1';
             document.body.appendChild(heartSpan);
             setTimeout(() => {
-              heartSpan.style.transform = 'translateY(-120px) scale(0.3) rotate(40deg)';
+              heartSpan.style.transform = 'translateY(-140px) scale(0.2) rotate(50deg)';
               heartSpan.style.opacity = '0';
-            }, 60);
+            }, 50);
             setTimeout(() => {
               if (heartSpan.parentNode) heartSpan.remove();
-            }, 1500);
-          }, i * 100);
+            }, 1800);
+          }, i * 120);
         }
       });
 
-      // hear her answer
+      // hear Muneeba's answer
       hearBtn.addEventListener('click', function() {
         const randomIndex = Math.floor(Math.random() * sweetAnswers.length);
         const herReply = sweetAnswers[randomIndex];
 
         herAnswerDiv.style.opacity = '0';
-        herAnswerDiv.style.transform = 'scale(0.7)';
+        herAnswerDiv.style.transform = 'scale(0.6)';
         setTimeout(() => {
           herAnswerDiv.textContent = herReply;
-          herAnswerDiv.style.transition = 'opacity 0.5s ease, transform 0.4s ease';
+          herAnswerDiv.style.transition = 'opacity 0.6s ease, transform 0.5s ease';
           herAnswerDiv.style.opacity = '1';
           herAnswerDiv.style.transform = 'scale(1)';
         }, 70);
 
-        // extra sparkles on answer
-        const sparkles = ['💖', '💗', '❤️', '🥰', '💕', '✨'];
+        // sparkles on answer
+        const sparkles = ['💜', '💖', '💗', '🥰', '✨'];
         let count = 0;
         const interval = setInterval(() => {
           if (count >= 10) { clearInterval(interval); return; }
           const mini = document.createElement('span');
           mini.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
           mini.style.display = 'inline-block';
-          mini.style.fontSize = '2.2rem';
+          mini.style.fontSize = '2rem';
           mini.style.margin = '0 4px';
           mini.style.animation = 'wiggle 0.9s infinite alternate';
           herAnswerDiv.appendChild(mini);
@@ -553,18 +574,18 @@
               herAnswerDiv.removeChild(herAnswerDiv.children[0]);
             }
           }, 5000);
-        }, 180);
+        }, 200);
       });
 
-      // hidden message click triggers answer too
+      // click on hidden message also triggers answer
       hiddenMsg.addEventListener('click', function(e) {
         if (e.target === hearBtn || e.target.closest('#hearAnswerBtn')) return;
         hearBtn.click();
         const extraLove = document.createElement('div');
-        extraLove.textContent = '💞 I love you (just in case) 💞';
-        extraLove.style.fontSize = '1rem';
+        extraLove.textContent = '💜 I love you, Muneeba (just in case) 💜';
+        extraLove.style.fontSize = '0.95rem';
         extraLove.style.marginTop = '0.8rem';
-        extraLove.style.color = '#b34a6a';
+        extraLove.style.color = '#b08094';
         extraLove.style.fontStyle = 'italic';
         const oldExtra = hiddenMsg.querySelector('.extra-love-note');
         if (oldExtra) oldExtra.remove();
@@ -575,21 +596,21 @@
         }, 5000);
       });
 
-      // double click call button = extra love
+      // double click = extra love for Muneeba
       callBtn.addEventListener('dblclick', function() {
         for (let i = 0; i < 4; i++) {
           setTimeout(() => {
             const heartSpan = document.createElement('span');
-            heartSpan.textContent = '💗';
-            heartSpan.style.fontSize = '3.2rem';
+            heartSpan.textContent = '💜';
+            heartSpan.style.fontSize = '3rem';
             heartSpan.style.display = 'inline-block';
             heartSpan.style.animation = 'wiggle 0.8s infinite alternate';
             heartSpan.style.margin = '0 4px';
             document.querySelector('.gif-surprise').appendChild(heartSpan);
             setTimeout(() => {
               if (heartSpan.parentNode) heartSpan.remove();
-            }, 3500);
-          }, i * 200);
+            }, 4000);
+          }, i * 180);
         }
       });
 
